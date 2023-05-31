@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Engine</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+    .search-box {
+      display: flex;
+    }
+    .search-box input[type="text"] {
+      flex: 1;
+      padding: 8px;
+      font-size: 16px;
+    }
+    .search-box button {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .search-result {
+      margin-top: 20px;
+      text-align: left;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AlgoSearch</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Digite sua pesquisa" />
+      <button onclick="search()">Pesquisar</button>
+    </div>
+    <div class="search-result" id="searchResult"></div>
+  </div>
+  <div class="container">
+    <!-- Resto do conteúdo -->
+    <button onclick="displayTree()">Visualizar Árvore</button>
+    <div id="treeDisplay" class="tree"></div>
+  </div>
+  
+</body>
+</html>
